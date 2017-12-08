@@ -4,10 +4,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.audrey.futurepredict.MainActivity">
+    tools:context="com.audrey.futurepredict.welcome.GuideActivity">
 
-    <com.hjm.bottomtabbar.BottomTabBar
-        android:id="@+id/main_tabBar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>

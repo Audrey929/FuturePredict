@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/title" />
+
+        <LinearLayout
+            android:id="@+id/user_ll"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp">
+
+            <ImageView
+                android:id="@+id/user_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="6dp"
+                android:src="@mipmap/user_head_default" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="点击登录" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="游客" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/right_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/right_arrow2x" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_down"
+            style="@style/UserItem"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/user_download" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/UserItemText"
+                android:text="我的下载" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/right_arrow2x" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_enshrine"
+            style="@style/UserItem"
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/user_collection" />
+
+            <TextView
+                style="@style/UserItemText"
+                android:text="我的收藏" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/right_arrow2x" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_balance"
+            style="@style/UserItem"
+            android:layout_marginTop="0dp"
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/user_account" />
+
+            <TextView
+                style="@style/UserItemText"
+                android:text="账户余额" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical"
+                android:text="0张可用"
+                android:textColor="@color/colorYellow" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/right_arrow2x" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_record"
+            style="@style/UserItem"
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/user_purchase" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/UserItemText"
+                android:text="购买记录" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/right_arrow2x" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_messagecenter"
+            style="@style/UserItem"
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/user_news" />
+
+            <TextView
+                style="@style/UserItemText"
+                android:text="消息中心" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/right_arrow2x" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_vip"
+            style="@style/UserItem"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/user_vip" />
+
+            <TextView
+                style="@style/UserItemText"
+                android:text="VIP专享" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/right_arrow2x" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_setting"
+            style="@style/UserItem"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/user_install" />
+
+            <TextView
+                style="@style/UserItemText"
+                android:text="设置" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/right_arrow2x" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_servicephone"
+            style="@style/UserItem"
+            android:background="@color/colorWhite">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/user_phone" />
+
+            <TextView
+                style="@style/UserItemText"
+                android:text="客服电话" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical"
+                android:text="0571_86131815"
+                android:textColor="@color/colorGray1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/right_arrow2x" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
